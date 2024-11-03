@@ -1,0 +1,20 @@
+table {
+	border: 1px solid black;
+}
+
+.Grass {
+	color: white;
+	background-color: green;
+}
+.Water {
+	color: white;
+	background-color: blue;
+}
+.Fire {
+	color: white;
+	background-color: red;
+}
+td:hover {
+	color: black;
+	background-color: white;
+}
