@@ -5,6 +5,9 @@
     <title>Creating Effects with CSS</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,16 +31,17 @@
     <section>
         <!--IMAGE ONE-->
         <div class="image-container" id="image1">
-            <img src="images/image1.jpg">
-            <div class="overlay"></div>
+            <div class="blur">
+                <img src="images/image1.jpg">
+            </div>
         </div>
         <!--IMAGE TWO-->
         <div class="image-container" id="image2">
-            <img src="images/image2.jpg" class="zoom">
+            <img src="images/image2.jpg" class="invert">
         </div>
         <!--IMAGE THREE-->
         <div class="image-container" id="image3">
-            <div class="circle">
+            <div class="flip">
                 <img src="images/image3.jpg">
             </div>
         </div>
