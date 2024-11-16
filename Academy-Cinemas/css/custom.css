@@ -3,7 +3,7 @@
 /*Font Yesteryear from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
-/*Creates globak CSS variables that can be reused throughout the file*/
+/*Creates global CSS variables that can be reused throughout the file*/
 :root{
     --main-color: rgb(126, 133, 130);
     --main-color-accent: rgb(237, 192, 3);
