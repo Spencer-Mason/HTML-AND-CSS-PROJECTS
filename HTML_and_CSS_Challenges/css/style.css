@@ -1,0 +1,145 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    background-color: aqua;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+a {
+    font-size: 30px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: aquamarine;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    cursor: default;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    filter: sepia(100%);
+    border-radius: 500px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    border-radius: 500px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.over_text {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-color: black;
+    padding: 2px;
+}
+
+th {
+    background-color: green;
+}
+
+.column {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+
+.col_left {
+    background-color: rgb(90, 177, 3);
+    color: rgb(112, 132, 175);
+}
+
+.col_right {
+    background-color: rgb(112, 132, 175);
+    color: rgb(90, 177, 3);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div p:hover {
+    filter: invert(100%);
+}
+
+.video_container{
+    position: relative;
+    text-align: center;
+}
+
+.video_text{
+    position: absolute;
+    top: 8px;
+    left: 25%;
+    color: white;
+    font-size: 50px;
+}
