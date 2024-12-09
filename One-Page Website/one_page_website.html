@@ -27,6 +27,100 @@
                 <a href="#contact" aria-label="Contact us"><li>Contact</li></a>
             </ul>
         </nav>
+
+        <!--Images used to open the lightbox-->
+        <div class="row">
+            <div class="column">
+                <img src="(image one)" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="(image two)" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="(image three)" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="(image four)" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="(image five)" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="(image six)" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!--Modal/Lightbox-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="(image one)" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="(image two)" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="(image three)" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="(image four)" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="(image five)" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="(image six)" style="width: 100%;">
+                </div>
+
+                <!--Next/previous controls-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!--Caption text-->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!--Thumbnail image controls-->
+                <div class="column">
+                    <img class="demo" src="(image one)" onclick="currentSlide(1)" alt="(image description)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="(image two)" onclick="currentSlide(2)" alt="(image description)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="(image three)" onclick="currentSlide(3)" alt="(image description)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="(image four)" onclick="currentSlide(4)" alt="(image description)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="(image five)" onclick="currentSlide(5)" alt="(image description)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="(image six)" onclick="currentSlide(6)" alt="(image description)">
+                </div>
+            </div>
+        </div>
+
         <!--MAIN CONTENT-->
         <section>
             <div id="yog-sothoth">
